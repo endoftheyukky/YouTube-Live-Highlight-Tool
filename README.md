@@ -1,5 +1,3 @@
-## README.md
-
 ```markdown
 # YouTube-Chat-Highlight-Extractor
 
