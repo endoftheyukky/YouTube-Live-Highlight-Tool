@@ -102,17 +102,3 @@ graphs/
 
 このプロジェクトはMITライセンスの下でライセンスされています。
 ```
-
-## `requirements.txt`
-
-以下の内容で`requirements.txt`を作成します：
-
-```txt
-chat_downloader
-google-api-python-client
-pandas
-matplotlib
-tqdm
-mecab-python3
-uuid
-```
