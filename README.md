@@ -116,11 +116,3 @@ tqdm
 mecab-python3
 uuid
 ```
-
-このファイルをリポジトリに追加し、コミットおよびプッシュします。
-
-```sh
-git add requirements.txt
-git commit -m "Add requirements.txt"
-git push
-```
