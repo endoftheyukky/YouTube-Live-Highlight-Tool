@@ -97,8 +97,3 @@ graphs/
                 <rank>_<word>_frequency.png
                 <rank>_<selected_word>_frequency_selected.png
 ```
-
-## ライセンス
-
-このプロジェクトはMITライセンスの下でライセンスされています。
-```
