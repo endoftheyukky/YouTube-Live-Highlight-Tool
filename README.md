@@ -1,18 +1,21 @@
-# YouTube-Chat-Highlight-Extractor
+## README.md
 
-This repository contains a tool for extracting and analyzing chat data from YouTube live streams. The tool identifies the most frequently used words in the chat and generates graphs showing the frequency of these words over time. It also identifies words with a single peak in frequency, which can be used to highlight key moments in the stream.
+```markdown
+# YouTube-Live-Highlight-Tool
 
-## Overview
+このリポジトリは、YouTubeライブ配信のチャットデータを抽出して分析するツールを含んでいます。このツールは、チャット内で最も頻繁に使用される単語を特定し、これらの単語の時間ごとの頻度を示すグラフを生成します。また、頻度に一度だけピークがある単語を特定し、これをハイライトすることで、配信の重要な瞬間を抽出することができます。
 
-The system performs the following steps:
-1. Downloads chat data from a specified YouTube live stream.
-2. Analyzes the comments to identify the most frequently used words.
-3. Generates time series graphs of the word frequencies.
-4. Identifies words with a single peak in their frequency and highlights these words.
+## 概要
 
-## Requirements
+このシステムは以下のステップを実行します：
+1. 指定されたYouTubeライブ配信からチャットデータをダウンロードします。
+2. コメントを分析して、最も頻繁に使用される単語を特定します。
+3. 単語の頻度を時間軸に沿って示すグラフを生成します。
+4. 頻度に一度だけピークがある単語を特定し、これをハイライトします。
 
-- Python 3.7+
+## 必要要件
+
+- Python 3.7以上
 - `chat_downloader`
 - `google-api-python-client`
 - `pandas`
@@ -21,42 +24,42 @@ The system performs the following steps:
 - `mecab-python3`
 - `uuid`
 
-## Installation
+## インストール
 
-1. Clone the repository:
+1. リポジトリをクローンします：
     ```sh
     git clone https://github.com/your-username/YouTube-Chat-Highlight-Extractor.git
     cd YouTube-Chat-Highlight-Extractor
     ```
 
-2. Create a virtual environment:
+2. 仮想環境を作成します：
     ```sh
     python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    source venv/bin/activate  # Windowsの場合は `venv\Scripts\activate`
     ```
 
-3. Install the required packages:
+3. 必要なパッケージをインストールします：
     ```sh
     pip install -r requirements.txt
     ```
 
-4. Set up MeCab and its dictionary:
-    - Follow the instructions for your operating system to install MeCab and the IPA dictionary.
+4. MeCabとその辞書をセットアップします：
+    - お使いのOSに応じた手順に従って、MeCabとIPA辞書をインストールします。
 
-5. Create a `config.py` file and add your YouTube API key:
+5. `config.py`ファイルを作成し、YouTube APIキーを追加します：
     ```python
     # config.py
     API_KEY = 'YOUR_VALID_API_KEY'
     ```
 
-## Usage
+## 使い方
 
-To run the tool, use the following command:
+ツールを実行するには、以下のコマンドを使用します：
 ```sh
 python main.py <YouTube URL>
 ```
 
-## Example
+## 実行例
 
 ```sh
 $ python main.py https://www.youtube.com/live/lRwUNHq7WVY
@@ -86,9 +89,9 @@ Selected word for plotting: 楽しい
 '楽しい' has a single peak at minute 43
 ```
 
-## Directory Structure
+## ディレクトリ構造
 
-The generated graphs will be saved in the following directory structure:
+生成されたグラフは、以下のディレクトリ構造で保存されます：
 ```
 graphs/
     <video_id>/
@@ -98,7 +101,7 @@ graphs/
                 <rank>_<selected_word>_frequency_selected.png
 ```
 
-## License
+## ライセンス
 
-This project is licensed under the MIT License.
+このプロジェクトはMITライセンスの下でライセンスされています。
 ```
