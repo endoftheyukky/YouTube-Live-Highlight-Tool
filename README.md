@@ -1,4 +1,7 @@
-# YouTube-Live-Highlight-Tool
+## README.md
+
+```markdown
+# YouTube-Chat-Highlight-Extractor
 
 このリポジトリには、YouTubeライブ配信からチャットデータを抽出および分析するためのツールが含まれています。このツールは、チャット内で最も頻繁に使用される単語を特定し、それらの単語の出現頻度を時間ごとに示すグラフを生成します。また、出現頻度に単一のピークがある単語を特定し、これらの単語を使用して配信の重要な瞬間をハイライトします。
 
@@ -101,4 +104,26 @@ graphs/
 ## ライセンス
 
 このプロジェクトはMITライセンスの下でライセンスされています。
+```
+
+## `requirements.txt`
+
+以下の内容で`requirements.txt`を作成します：
+
+```txt
+chat_downloader
+google-api-python-client
+pandas
+matplotlib
+tqdm
+mecab-python3
+uuid
+```
+
+このファイルをリポジトリに追加し、コミットおよびプッシュします。
+
+```sh
+git add requirements.txt
+git commit -m "Add requirements.txt"
+git push
 ```
