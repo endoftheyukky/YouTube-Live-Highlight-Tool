@@ -102,5 +102,3 @@ graphs/
 
 This project is licensed under the MIT License.
 ```
-
-このREADME.mdテンプレートには、システムの概要、環境構築の手順、使用方法、実行例、生成されるディレクトリ構造、およびライセンス情報が含まれています。リポジトリ名を変更する場合は、適宜読み替えてください。
